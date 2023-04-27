@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/GoldSpike_V01.loader.js";
+      var loaderUrl = buildUrl + "/builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/GoldSpike_V01.data",
-        frameworkUrl: buildUrl + "/GoldSpike_V01.framework.js",
-        codeUrl: buildUrl + "/GoldSpike_V01.wasm",
+        dataUrl: buildUrl + "/builds.data",
+        frameworkUrl: buildUrl + "/builds.framework.js",
+        codeUrl: buildUrl + "/builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SteamTunnelMap",
@@ -90,6 +90,8 @@
 
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
+
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
